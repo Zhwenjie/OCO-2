@@ -46,7 +46,7 @@ for (i in 1:length(target.files)) {
   # Filter the data before saving
   oneday <- oneday[complete.cases(oneday),]
   oneday<-oneday[oneday$fs>0,]
-  #oneday <- oneday[oneday$xco2_quality_flag==0,]
+  oneday <- oneday[oneday$xco2_quality_flag==0,]
   #oneday <- oneday[oneday$warn_level<15,]
   #oneday <- oneday[oneday$operation_mode<2,]
   #oneday <- oneday[(oneday$xco2_uncertainty < 3),]
